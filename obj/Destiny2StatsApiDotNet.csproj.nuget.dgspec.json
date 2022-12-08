@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/jules/github/Destiny2StatsApiDotNet/Destiny2StatsApiDotNet.csproj": {}
+  },
+  "projects": {
+    "/Users/jules/github/Destiny2StatsApiDotNet/Destiny2StatsApiDotNet.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jules/github/Destiny2StatsApiDotNet/Destiny2StatsApiDotNet.csproj",
+        "projectName": "Destiny2StatsApiDotNet",
+        "projectPath": "/Users/jules/github/Destiny2StatsApiDotNet/Destiny2StatsApiDotNet.csproj",
+        "packagesPath": "/Users/jules/.nuget/packages/",
+        "outputPath": "/Users/jules/github/Destiny2StatsApiDotNet/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/jules/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "contentful.aspnetcore": {
+              "target": "Package",
+              "version": "[7.2.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.425/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
