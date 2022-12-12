@@ -122,3 +122,4 @@
 /app/obj/Debug/netcoreapp3.1/Destiny2StatsApiDotNet.dll
 /app/obj/Debug/netcoreapp3.1/Destiny2StatsApiDotNet.pdb
 /app/obj/Debug/netcoreapp3.1/Destiny2StatsApiDotNet.genruntimeconfig.cache
+/app/obj/Debug/netcoreapp3.1/Razor/Views/Login/index.cshtml.g.cs
