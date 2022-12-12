@@ -7586,19 +7586,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/jules/.nuget/packages/": {}
+    "/root/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jules/github/Destiny2StatsApiDotNet/Destiny2StatsApiDotNet.csproj",
+      "projectUniqueName": "/app/Destiny2StatsApiDotNet.csproj",
       "projectName": "Destiny2StatsApiDotNet",
-      "projectPath": "/Users/jules/github/Destiny2StatsApiDotNet/Destiny2StatsApiDotNet.csproj",
-      "packagesPath": "/Users/jules/.nuget/packages/",
-      "outputPath": "/Users/jules/github/Destiny2StatsApiDotNet/obj/",
+      "projectPath": "/app/Destiny2StatsApiDotNet.csproj",
+      "packagesPath": "/root/.nuget/packages/",
+      "outputPath": "/app/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/jules/.nuget/NuGet/NuGet.Config"
+        "/root/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -7643,7 +7643,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.425/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/root/.dotnet/sdk/3.1.425/RuntimeIdentifierGraph.json"
       }
     }
   }
