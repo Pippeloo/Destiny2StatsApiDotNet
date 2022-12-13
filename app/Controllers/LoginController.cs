@@ -22,13 +22,19 @@ namespace Destiny2StatsApiDotNet.Controllers
             _client = client;
         }
 
-        public IActionResult Index(string error)
+        public async Task<IActionResult> Index(string error)
         {
             // Show the error if there is one in the page
             if (error != null)
             {
                 ViewBag.Error = error;
             }
+
+            // Get the logo from contentful
+            var logo = await _client.GetAsset("4iHXZYm87N3Q2C3Ld9GCyR");
+
+            // Set the logo url to the viewbag
+            ViewBag.Logo = logo.File.Url;
 
             return View();
         }
@@ -49,7 +55,7 @@ namespace Destiny2StatsApiDotNet.Controllers
             }
 
             // Return to the login page and display an error
-            return RedirectToAction("Index", "Login", new { error = "Invalid username" });
+            return RedirectToAction("Index", "Login", new { error = "User doesn't exist!" });
         }
     }
 }
