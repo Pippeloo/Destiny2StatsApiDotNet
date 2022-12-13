@@ -12,3 +12,6 @@ stop:
 
 stop-dev:
 	docker-compose -f docker-compose.dev.yml down
+
+logs:
+	docker-compose logs -f
