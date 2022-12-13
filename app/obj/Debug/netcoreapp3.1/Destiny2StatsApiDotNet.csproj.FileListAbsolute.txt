@@ -107,7 +107,6 @@
 /app/obj/Debug/netcoreapp3.1/Destiny2StatsApiDotNet.TagHelpers.output.cache
 /app/obj/Debug/netcoreapp3.1/Destiny2StatsApiDotNet.RazorCoreGenerate.cache
 /app/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
-/app/obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs
 /app/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs
 /app/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
 /app/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
@@ -123,3 +122,4 @@
 /app/obj/Debug/netcoreapp3.1/Destiny2StatsApiDotNet.pdb
 /app/obj/Debug/netcoreapp3.1/Destiny2StatsApiDotNet.genruntimeconfig.cache
 /app/obj/Debug/netcoreapp3.1/Razor/Views/Login/index.cshtml.g.cs
+/app/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_LoginLayout.cshtml.g.cs

@@ -1,15 +1,13 @@
-﻿@using Contentful.Core.Models
-
-@model ContentfulCollection<Destiny2StatsTracker>
-
-@{
-    ViewData["Title"] = "Home Page";
+﻿@{
+    ViewData["Title"] = "Stats";
 }
 
-<h1>Users</h1>
+<h1>Stats</h1>
 
-@foreach(var user in Model) {
-    <h2>@user.Username</h2>
-    <h2>@user.boolean</h2>
-    <h2>@user.Title</h2><br>
-}
+<h2>@Model.Username</h2>
+<h2>@Model.KillDeath</h2>
+<h2>@Model.creationDate</h2>
+<h2>@Model.favoriteWeapon</h2>
+<h2>@Model.hoursPlayed</h2>
+<h2>@Model.powerLevel</h2>
+

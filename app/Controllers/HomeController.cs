@@ -22,15 +22,28 @@ namespace Destiny2StatsApiDotNet.Controllers
             _client = client;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string username)
         {
-            var user = await _client.GetEntries<Destiny2StatsTracker>();
-            return View(user);
-        }
+            // Check if the username is null
+            if (username == null)
+            {
+                // If it is null, redirect to the login page
+                return RedirectToAction("Index", "Login");
+            }
 
-        public IActionResult Privacy()
-        {
-            return View();
+            // Get the user with the username
+            var users = await _client.GetEntries<Destiny2StatsTracker>();
+
+            var user = users.Where(x => x.Username == username).FirstOrDefault();
+
+            // Check if the user is null
+            if (user == null)
+            {
+                // If it is null, redirect to the login page
+                return RedirectToAction("Index", "Login");
+            }
+
+            return View(user);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

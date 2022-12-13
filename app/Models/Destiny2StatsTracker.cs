@@ -6,8 +6,14 @@ namespace Destiny2StatsApiDotNet.Models
     {
         public string Username { get; set; }
 
-        public bool boolean { get; set; }
+        public int KillDeath { get; set; }
 
-        public string Title { get; set; }
+        public DateTime creationDate { get; }
+
+        public string favoriteWeapon { get; set; }
+
+        public string hoursPlayed { get; set; }
+
+        public string powerLevel { get; set; }
     }
 }
