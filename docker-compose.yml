@@ -2,6 +2,6 @@ version: "3.9"
 
 services:
   dotnet:
-    image: destiny2statsdotnet
+    image: pippeloo/jt_devops_destiny2api_dotnet:latest
     ports:
       - "5000:5000"
