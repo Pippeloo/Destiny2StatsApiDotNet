@@ -29,4 +29,4 @@ jobs:
           context: .
           push: true
           platforms: linux/amd64
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/jt_devops_destiny2api_dotnet:${{ github.ref_name }}-${{ github.sha }}, ${{ secrets.DOCKERHUB_USERNAME }}/jt_devops_destiny2api_dotnet:${{ github.ref_name }}-latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/jt_devops_destiny2api_dotnet:${{ github.ref_name }}-${{ github.sha }}, ${{ secrets.DOCKERHUB_USERNAME }}/jt_devops_destiny2api_dotnet:${{ github.ref_name }}-latest, ${{ secrets.DOCKERHUB_USERNAME }}/jt_devops_destiny2api_dotnet:latest
