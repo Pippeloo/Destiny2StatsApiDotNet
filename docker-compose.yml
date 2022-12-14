@@ -2,10 +2,6 @@ version: "3.9"
 
 services:
   dotnet:
-    image: dotnetcoreapp:latest
-    volumes:
-      - ./app:/app
-    working_dir: /app
-    command: /root/.dotnet/dotnet run
+    image: destiny2statsdotnet
     ports:
       - "5000:5000"
