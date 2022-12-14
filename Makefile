@@ -1,5 +1,5 @@
 docker-build: 
-	docker build -f Dockerfile . -t dotnetcoreapp
+	docker build -f Dockerfile . -t destiny2statsdotnet
 
 start:
 	docker-compose up -d

@@ -1,23 +1,19 @@
-FROM ubuntu:20.04
+FROM mcr.microsoft.com/dotnet/sdk:3.1.426-alpine3.16 AS build
 
-# Execute updates
-RUN apt-get update && apt-get upgrade -y
+WORKDIR /source
 
-# Set workdir to tmp
-WORKDIR /tmp
+# copy csproj and restore as distinct layers
+# COPY *.sln .
+COPY app/*.csproj ./app/
+RUN dotnet restore app
 
-# Install wget
-RUN apt-get install wget -y
+# copy csproj and restore as distinct layers
+COPY app/. ./app/
+WORKDIR /source/app
+RUN dotnet publish -c Release -o /app --no-restore
 
-# Download and install dotnet 3.1
-RUN wget https://dot.net/v1/dotnet-install.sh \
-    && chmod +x dotnet-install.sh \
-    && ./dotnet-install.sh --version 3.1.425
-
-# RUN export PATH=$PATH:$HOME/.dotnet:$HOME/.dotnet/tools
-ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT 1
-
-# Clean up
-RUN rm -rf /tmp/*
-
-EXPOSE 5000
+# final stage/image
+FROM mcr.microsoft.com/dotnet/aspnet:3.1.32-alpine3.16
+WORKDIR /app
+COPY --from=build /app ./
+ENTRYPOINT ["dotnet", "Destiny2StatsApiDotNet.dll"]
