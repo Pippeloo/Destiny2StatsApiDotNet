@@ -1,8 +1,8 @@
 ﻿@{
     ViewData["Title"] = "Stats";
 }
-<div class="row mt-3 p-3">
-    <div class="rounded col col-3 p-3 me-3 text-center background-color-opacity">
+<div class="row mt-3 p-3 justify-content-between flex-nowrap">
+    <div class="rounded col-3 p-3 me-3 text-center background-color-opacity">
         <figure>
             <img src="@Model.profileImage.File.Url" alt="Profile Image" white="200" height="200" class="rounded-circle" />
         </figure>
@@ -11,35 +11,30 @@
         <h1>@Model.Username</h1>
     </div>
 
-    <div class="rounded col col-3 p-3 text-center background-color-opacity align-middle">
-        <div>
-            <h2>Creation Date</h2>
-            <h3>@Model.creationDate</h3>
-        </div>
-        <div>
-            <h2>Hours Played</h2>
-            <h3>@Model.hoursPlayed</h3>
-        </div>
+    <div class="d-flex align-items-center justify-content-center rounded flex-fill p-3 text-center background-color-opacity">
+        <img src="@Model.userEmblem.File.Url" alt="Emblem Image" white="474" height="96"/>
     </div>
 </div>
 
-<div class="col col-9 background-color-opacity mt-3 p-3 rounded">
+<div class="col col-12 background-color-opacity mt-3 p-3 rounded">
     <div class="row">
-        <div class="col col-6">
-            <h2>Power Level</h2>
-            <h3>@Model.powerLevel</h3>
+        <div class="col-4">
+            <div>
+                <h2>Power Level</h2>
+                <h4 class="text-white">@Model.powerLevel</h4>
+            </div>
+            <div>
+                <h2>Hours played</h2>
+                <h4 class="text-white">@Model.hoursPlayed</h4>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col col-6">
+        <div class="col-4">
             <h2>Favorite Weapon</h2>
-            <h3>@Model.favoriteWeapon</h3>
+            <h4 class="text-white">@Model.favoriteWeapon</h3>
         </div>
-    </div>
-    <div class="row">
-        <div class="col col-6">
+        <div class="col-4">
             <h2>K/D Ratio</h2>
-            <h3>@Model.KillDeath</h3>
+            <h4 class="text-white">@Model.KillDeath</h3>
         </div>
     </div>
 </div>

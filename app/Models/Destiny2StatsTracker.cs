@@ -8,9 +8,7 @@ namespace Destiny2StatsApiDotNet.Models
     {
         public string Username { get; set; }
 
-        public int KillDeath { get; set; }
-
-        public DateTime creationDate { get; }
+        public float KillDeath { get; set; }
 
         public string favoriteWeapon { get; set; }
 
@@ -19,5 +17,7 @@ namespace Destiny2StatsApiDotNet.Models
         public string powerLevel { get; set; }
 
         public Asset profileImage { get; set; }
+
+        public Asset userEmblem { get; set; }
     }
 }
