@@ -1,0 +1,8 @@
+/* Set a background image in the body */
+body {
+    background-image: url("../images/LoginBackground.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}

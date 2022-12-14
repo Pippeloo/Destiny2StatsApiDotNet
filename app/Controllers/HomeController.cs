@@ -42,7 +42,7 @@ namespace Destiny2StatsApiDotNet.Controllers
                 // If it is null, redirect to the login page
                 return RedirectToAction("Index", "Login");
             }
-
+            
             return View(user);
         }
 

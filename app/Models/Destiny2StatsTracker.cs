@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using Contentful.Core.Models;
 
 namespace Destiny2StatsApiDotNet.Models
 {
@@ -15,5 +17,7 @@ namespace Destiny2StatsApiDotNet.Models
         public string hoursPlayed { get; set; }
 
         public string powerLevel { get; set; }
+
+        public Asset profileImage { get; set; }
     }
 }

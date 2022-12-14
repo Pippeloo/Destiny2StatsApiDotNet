@@ -1,17 +1,46 @@
 ﻿@{
     ViewData["Title"] = "Stats";
 }
+<div class="row mt-3 p-3">
+    <div class="rounded col col-3 p-3 me-3 text-center background-color-opacity">
+        <figure>
+            <img src="@Model.profileImage.File.Url" alt="Profile Image" white="200" height="200" class="rounded-circle" />
+        </figure>
 
-<div>
+        @* Show the username *@
+        <h1>@Model.Username</h1>
+    </div>
 
+    <div class="rounded col col-3 p-3 text-center background-color-opacity align-middle">
+        <div>
+            <h2>Creation Date</h2>
+            <h3>@Model.creationDate</h3>
+        </div>
+        <div>
+            <h2>Hours Played</h2>
+            <h3>@Model.hoursPlayed</h3>
+        </div>
+    </div>
 </div>
 
-<h1>Stats</h1>
-
-<h2>@Model.Username</h2>
-<h2>@Model.KillDeath</h2>
-<h2>@Model.creationDate</h2>
-<h2>@Model.favoriteWeapon</h2>
-<h2>@Model.hoursPlayed</h2>
-<h2>@Model.powerLevel</h2>
+<div class="col col-9 background-color-opacity mt-3 p-3 rounded">
+    <div class="row">
+        <div class="col col-6">
+            <h2>Power Level</h2>
+            <h3>@Model.powerLevel</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-6">
+            <h2>Favorite Weapon</h2>
+            <h3>@Model.favoriteWeapon</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-6">
+            <h2>K/D Ratio</h2>
+            <h3>@Model.KillDeath</h3>
+        </div>
+    </div>
+</div>
 
