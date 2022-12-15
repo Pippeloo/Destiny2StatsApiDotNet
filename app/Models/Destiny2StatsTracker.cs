@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using Contentful.Core.Models;
 
 namespace Destiny2StatsApiDotNet.Models
