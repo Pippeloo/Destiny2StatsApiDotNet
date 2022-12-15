@@ -43,7 +43,7 @@ namespace Destiny2StatsApiDotNet.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(Login model)
         {
-            var user = await _client.GetEntries<Destiny2StatsTracker>();
+            var user = await _client.GetEntries<Login>();
 
             for (int i = 0; i < user.Count(); i++)
             {

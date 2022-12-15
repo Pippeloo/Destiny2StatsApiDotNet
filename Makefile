@@ -2,7 +2,7 @@ docker-build:
 	docker build -f Dockerfile . -t destiny2statsdotnet
 
 start:
-	docker-compose pull && docker-compose up -d
+	docker-compose up -d
 
 start-dev:
 	docker-compose -f docker-compose.dev.yml up -d

@@ -3,5 +3,6 @@ version: "3.9"
 services:
   dotnet:
     image: pippeloo/jt_devops_destiny2api_dotnet:latest
+    pull_policy: always
     ports:
       - "5000:5000"

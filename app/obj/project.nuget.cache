@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XbzOvmxuY7UKaJeHjLDKJKIVB7agXwv0qA4USvKkMmRqJPizCwQHezfMjXREkTL4ZzJQI4FEA0TaZWiluEpmfA==",
+  "dgSpecHash": "XJIE2snigmCpxbX36OOPpyyBJCqcdlRhilKH6C+KjfI6TsYHDLWYsdHiJF0CbGLqP9pI+YKWL2Trq4C/OMaWRg==",
   "success": true,
   "projectFilePath": "/app/Destiny2StatsApiDotNet.csproj",
   "expectedPackageFiles": [
