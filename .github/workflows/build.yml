@@ -2,13 +2,12 @@ name: Build & Push Docker Image
 
 on:
   push:
-    branches: ["release", "develop"]
+    branches: ["release"]
 
   workflow_dispatch:
 
 jobs:
   build:
-    if: github.ref == 'refs/heads/release'
     runs-on: ubuntu-latest
 
     steps:
